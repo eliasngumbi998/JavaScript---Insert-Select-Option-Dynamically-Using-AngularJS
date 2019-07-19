@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myModule">
+	<head>
+		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1"/>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+	</head>
+<body ng-controller="myController">
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="<a href="https://eliasngumbipro.com">Elias Ngumbi</a>
+" rel="nofollow">https://eliasngumbipro.com">Elias Ngumbi</a>
+</a>		</div>
+	</nav>
+	<div class="col-md-3"></div>
+	<div class="col-md-6 well">
+		<h3 class="text-primary">JavaScript - Insert Select Option Dynamically Using AngularJS</h3>
+		<hr style="borde-top:1px dotted #ccc;"/>
+		<div class="col-md-3"></div>
+		<div class="col-md-6">
+			<form>
+				<div class="form-group">
+					<label>Enter a word</label>
+					<input type="text" ng-model="newName.name" class="form-control"/>
+					<br />
+					<center><button type="button" ng-click="saveName()" class="btn btn-primary">Submit</button></center>
+				</div>
+			</form>
+			<br />
+			<center>
+				<div class="form-group">
+					<select class="form-control" ng-model="selectedName" ng-options="item.name for item in names">
+					</select>
+				</div>
+			</center>
+		</div>
+	</div>
+<script src="js/angular.js"></script>	
+<script src="js/script.js"></script>	
+</body>
+</html>
